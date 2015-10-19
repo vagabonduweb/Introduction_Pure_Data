@@ -1,4 +1,4 @@
-#N canvas 65 87 675 679 12;
+#N canvas 725 56 675 679 12;
 #X declare -path abs;
 #X text 178 35 <- ceci est un sous-patch. Il est possible de double
 clicker dessus pour voir ce qui est à l'intérieur. Celui-ci est vide
@@ -24,7 +24,7 @@ partie blanche du patch.;
 interagir directement avec lui \, en mode edit vous pouvez le sélectionner
 et le déplacer \, changer son nom et tirer un cable depuis ça sortie.
 Essayez ... !;
-#X floatatom 38 241 5 0 0 0 - - -, f 5;
+#X floatatom 38 241 5 0 0 0 - - -;
 #X text 116 240 ceci est un gui : en mode play vous pouvez cliquer
 dessus puis inscrire à nombre à l'intérieur à l'aide des touches
 de votre clavier \, ou alors cliquer puis laisser appuyer de déplacer
@@ -79,7 +79,7 @@ nouvel objet (CTRL+1) et on va le nommer "pd nom-de-mon-sous-patch"
 à pure-data que l'on veut créer un nouvel objet.;
 #X text -251 593 Cr�ez un nouveau sous patch nomm� "test" et cr�er
 un objet "osc~ 400" � l'int�rieur;
-#X floatatom -3 270 5 0 0 0 - - -, f 5;
+#X floatatom -3 270 5 0 0 0 - - -;
 #X text -260 143 Quelques objets sont disponibles directement depuis
 le menu "Ajouter" (/Put) vous pouvez essayer d'en créer quelques uns
 :;
@@ -101,10 +101,10 @@ de tirer un fil d'une sortie (si on est en mode "edit") mais pas d'une
 entrée.;
 #X text 10 232 Dans les fils ce sont des nombres ou des bangs qui sont
 envoyés d'un objet à l'autre.;
-#X floatatom 71 286 5 0 0 0 - - -, f 5;
-#X floatatom 108 332 5 0 0 0 - - -, f 5;
+#X floatatom 71 286 5 0 0 0 - - -;
+#X floatatom 108 332 5 0 0 0 - - -;
 #X obj 70 391 +;
-#X floatatom 70 458 5 0 0 0 - - -, f 5;
+#X floatatom 70 458 5 0 0 0 - - -;
 #X text 196 337 en mode edit vous pouvez essayer de recréer cet agencement
 d'objets en changeant l'opération proposée ( essayer avec un objet
 "-" \, "*" \, "/";
@@ -162,7 +162,7 @@ pour faire apparaitre le caractère.;
 #X restore 37 195 pd IO~;
 #X text 179 192 <- les entrées audio("inlet~") et les sorties audio
 ("outlet~");
-#N canvas 645 82 667 679 souspatch2 0;
+#N canvas 1872 -111 667 679 souspatch2 0;
 #X text 13 -142 On peut créer une entrée ou une sortie en créeant
 un objet de manière classique et en tapants comme nom "inlet" \, "outlet"
 \, "inlet~" \, "outlet~";
@@ -311,7 +311,7 @@ d'avoir un base de temps qui défile à une vitesse paramétrable.
 #X obj 43 404 f 0;
 #X obj 77 404 + 1;
 #X obj 43 371 metro 1000;
-#X floatatom 43 430 5 0 0 0 - - -, f 5;
+#X floatatom 43 430 5 0 0 0 - - -;
 #X text 15 471 Nous ne sommes plus qu'à un pas de pouvoir créer un
 premier séquenceur...;
 #X connect 1 0 2 0;
@@ -363,10 +363,10 @@ apparaitre que les objets gui.;
 #X obj -368 238 f 72;
 #X obj -295 238 f 65;
 #X obj -331 238 f 63;
-#X floatatom 9 6 5 60 72 1 note1 - -, f 5;
-#X floatatom 9 29 5 60 72 1 note2 - -, f 5;
-#X floatatom 9 52 5 60 72 1 note3 - -, f 5;
-#X floatatom 9 75 5 60 72 1 note4 - -, f 5;
+#X floatatom 9 6 5 60 72 1 note1 - -;
+#X floatatom 9 29 5 60 72 1 note2 - -;
+#X floatatom 9 52 5 60 72 1 note3 - -;
+#X floatatom 9 75 5 60 72 1 note4 - -;
 #X obj -405 -1 inlet;
 #X obj -179 -142 inlet;
 #X obj -179 -105 unpack f f f f;
@@ -448,7 +448,7 @@ va en fait générer des signaux qui vont être multpliés par le son
 source.;
 #X text -886 178 et sa version audio;
 #X msg -884 104 500 5000;
-#X floatatom -884 152 5 0 0 0 - - -, f 5;
+#X floatatom -884 152 5 0 0 0 - - -;
 #X text -895 53 Pour créer ces enveloppes \, ou d'autres signaux de
 contrôle on peut utiliser l'objet line qui utilise un MESSAGE pour
 prendre ses instructions;
@@ -460,7 +460,7 @@ que va durer notre rampe.;
 valeur atteinte et va interpoler à partir de cette valeur mémorisée
 ;
 #X obj -469 197 line;
-#X floatatom -469 221 5 0 0 0 - - -, f 5;
+#X floatatom -469 221 5 0 0 0 - - -;
 #X msg -469 142 500 500;
 #X msg -454 166 600 500;
 #X msg -429 196 0 500;
@@ -509,7 +509,7 @@ un échelle logarithmique ...;
 #X text -1160 7 En réalité quand nous avions fait ce patch et l'étape
 précédente nous avions déjà crée un synthétiseur \, il ne nous
 reste plus qu'à pouvoir changer la hauteur du son;
-#X floatatom -1113 108 5 0 0 0 - - -, f 5;
+#X floatatom -1113 108 5 0 0 0 - - -;
 #X text -1161 54 Il suffit d'ajouter un boite de nombre en entrée
 de l'oscillateur pour changer sa fréquence d'oscillation (entre 0
 et 20000 Hz);
@@ -519,7 +519,7 @@ et 20000 Hz);
 #X obj -1114 307 osc~ 440;
 #X obj -1033 308 abs/adsr 0.5 50 10 25 100;
 #X obj -1114 280 mtof;
-#X floatatom -1114 254 5 0 0 0 - - -, f 5;
+#X floatatom -1114 254 5 0 0 0 - - -;
 #X text -1071 277 conversion midi -> fréquence;
 #X text -1153 232 On peut aussi utilise des notes midi :;
 #X text -1116 429 36 est un DO;
@@ -658,7 +658,7 @@ qui sont les principaux effets "simples" intégrés à Pure-Data.;
 -0.204827 -0.274197 -0.339849 -0.401182 -0.457798 -0.509494 -0.556234
 -0.598121 -0.635361 -0.668231 -0.697056 -0.722177 -0.743932 -0.762645
 -0.778617 -0.792121 -0.803397 -0.812652 -0.820055 -0.825753 -0.829857
--0.832447;
+-0.832447 ;
 #X coords 0 1 511 -1 160 100 1 0 0;
 #X restore 307 245 graph;
 #X obj 174 280 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -667,7 +667,7 @@ qui sont les principaux effets "simples" intégrés à Pure-Data.;
 #X obj 174 326 tabwrite~ array2;
 #X obj 134 259 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X floatatom 79 254 5 0 0 0 - - -, f 5;
+#X floatatom 79 254 5 0 0 0 - - -;
 #X text 24 205 Exemple 1 : Onde sinusoidal / onde carrée;
 #X text 157 383 ... et d'autres filtres;
 #X obj 151 450 biquad~;
@@ -690,7 +690,7 @@ patch;
 #X connect 27 0 21 1;
 #X connect 36 0 37 0;
 #X restore 36 755 pd effets_simples;
-#N canvas 680 82 667 679 sortie_audio~ 0;
+#N canvas 680 82 667 679 sortie_audio~ 1;
 #X obj 41 243 dac~;
 #X text 40 147 la sortie audio s'appelle "dac~" pour la créer on créer
 un objet nommé "dac~";
@@ -699,9 +699,6 @@ donc que des signaux.;
 #X text 106 231 Le dac~ sont les haut-parleurs de votre système audio
 \, il va transformer les signaux audio que vous lui envoyez en une
 variation de position de la membrane du haut parleur;
-#X text 44 330 Il y a deux entrée car on présume que la plus part
-des personnes vont travailler avec un système d'écoute stéréophonique
-\, mais il est tout à fait possible d'avoir plus de sorties.;
 #X text 40 12 dans cette partie (et la plupart des suivantes) \, il
 faut veiller a bien avoir cocher la case "compute audio" ou "DSP" dans
 la console de démarrage de Pure-Data. Si cette case n'est pas cochée
@@ -709,11 +706,14 @@ aucun des objets audio (donc ceux dont le nom comporte un ~ ) ne sera
 activé. Vous pouvez tester l'audio à tout moment en allant dans "Média"
 -> "TEST AUDIO AND MIDI" et changer les GUI de la partie commentée
 "TEST TONES";
+#X text 44 330 Il y a deux entrée car on présume que la plupart des
+personnes travailleront avec un système d'écoute stéréophonique
+\, mais il est tout à fait possible d'avoir plus de sorties.;
 #X restore 36 392 pd sortie_audio~;
-#N canvas 683 50 667 679 chaine_audio~ 0;
+#N canvas 683 50 667 679 chaine_audio~ 1;
 #X obj 185 317 osc~ 440;
 #X obj 185 572 dac~;
-#X floatatom 185 272 8 0 0 0 - - -, f 8;
+#X floatatom 185 272 8 0 0 0 - - -;
 #X text 248 268 l'oscillateur qui accepte en entrée la fréquence
 à laquelle il doit osciller (entre 0 et 20000 a priori);
 #X obj 184 426 *~;
@@ -724,7 +724,7 @@ activé. Vous pouvez tester l'audio à tout moment en allant dans "Média"
 à 440 Hz.;
 #X obj 381 384 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X floatatom 381 404 5 0 0 0 - - -, f 5;
+#X floatatom 381 404 5 0 0 0 - - -;
 #X text 254 364 <- un nouveau GUI \, qui vaut 0 s'il n'est pas coché
 et 1 s'il l'est :;
 #X text 244 427 on multiplie le signal par 0 ou 1 du coup soit il est
@@ -768,6 +768,7 @@ signal processing" \, soit les calculs faits par les objets audio.
 #X obj 31 -43 switch~;
 #X text 66 -67 <- clicker pour activer les calculs dsp dans ce sous
 patch;
+#X msg 258 21 \; pd dsp 0;
 #X connect 0 0 4 0;
 #X connect 2 0 0 0;
 #X connect 4 0 6 0;
@@ -804,7 +805,7 @@ dans right 1 \, le sliders nous donnera 0 lorsque l'on sera tout à
 gauche et 1 lorsqu'on sera tout à droite.;
 #X obj 502 503 hsl 110 25 0 1 0 0 empty empty empty -2 -8 0 10 -257985
 -4034 -159808 0 1;
-#X floatatom 499 533 5 0 0 0 - - -, f 5;
+#X floatatom 499 533 5 0 0 0 - - -;
 #X text 23 595 Vous pouvez vous aussi vous faire un beau slider avec
 des couleurs flashy et profitez en pour reproduire l'exemple ci-dessus
 mais cette fois faites en sorte que ça ne casse pas les oreilles :)
@@ -924,16 +925,16 @@ suffit de préciser dans quelle table on veut dessiner et à quel rythme
 -1 -1;
 #X obj -834 511 tabwrite~ array1;
 #X obj -683 458 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj -669 508 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -832 378 osc~ 600;
 #X obj -683 482 metro 100;
 #X obj -829 359 hsl 128 15 0 2000 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 4500 1;
+-262144 -1 -1 0 1;
 #X obj -833 424 *~;
 #X obj -797 409 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 10100 1;
+-1 -1 0 1;
 #X text -686 353 contrôle de fréquence;
 #X text -660 406 contrôle de volume;
 #X text -655 430 cliquer pour représenter à l'instant t;
@@ -946,7 +947,7 @@ logique \, qui est vrai au moment ou il est cliqué;
 #X text -803 575 est un métronome càd un objet qui sortira des bangs
 toutes les x millisecondes;
 #X obj -886 -37 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj -886 -18 switch~;
 #X text -851 -42 <- clicker pour activer les calculs dsp dans ce sous
 patch;
@@ -964,12 +965,12 @@ patch;
 #X text 31 19 Au lieu de tirer des cables on peut utiliser des objets
 dédiés [send] et [receive];
 #X obj 46 98 send valeur;
-#X floatatom 46 74 5 0 0 0 - - -, f 5;
+#X floatatom 46 74 5 0 0 0 - - -;
 #X obj 168 72 receive valeur;
-#X floatatom 168 98 5 0 0 0 - - -, f 5;
+#X floatatom 168 98 5 0 0 0 - - -;
 #X text 27 138 On peut aussi utiliser leurs abréviations :;
-#X floatatom 48 162 5 0 0 0 - - -, f 5;
-#X floatatom 170 186 5 0 0 0 - - -, f 5;
+#X floatatom 48 162 5 0 0 0 - - -;
+#X floatatom 170 186 5 0 0 0 - - -;
 #X obj 48 186 s valeur1;
 #X obj 170 160 r valeur1;
 #X text 32 222 Cela marche aussi pour l'audio :;
@@ -987,8 +988,8 @@ l'aide de l'objet [value];
 #X obj 77 601 value variable;
 #X obj 77 578 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X floatatom 77 631 5 0 0 0 - - -, f 5;
-#X floatatom 75 488 5 0 0 0 - - -, f 5;
+#X floatatom 77 631 5 0 0 0 - - -;
+#X floatatom 75 488 5 0 0 0 - - -;
 #X text 44 459 Fixer la valeur de notre variable :;
 #X text 46 544 Rappeler cette valeur :;
 #X connect 2 0 1 0;
@@ -1077,8 +1078,8 @@ la notion d'entrée chaude et d'entrée froide ...;
 #X restore -1031 233 pd ad-env~;
 #X obj -1031 204 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom -998 203 5 0 0 0 - - -, f 5;
-#X floatatom -952 204 5 0 0 0 - - -, f 5;
+#X floatatom -998 203 5 0 0 0 - - -;
+#X floatatom -952 204 5 0 0 0 - - -;
 #X text -1027 255 complétez ce sous-patch \, donnez des valeurs à
 l'attaque et au decay \, puis cliquer sur le bang : vous devriez entendre
 un son ! (si le dsp est en route et que le volume général de votre
@@ -1129,6 +1130,18 @@ un abstraction.;
 -66577 0;
 #X text -1164 341 Créer une abstraction qui nous permettera de générer
 un nombre aléatoire dans un "range" spécifié par des arguments;
+#X floatatom -689 319 5 0 0 0 - - -;
+#X floatatom -616 320 5 0 0 0 - - -;
+#X floatatom -680 425 5 0 0 0 - - -;
+#X obj -726 301 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -687 499 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -680 549 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -681 355 LeRandom 12;
+#X connect 19 0 20 0;
+#X connect 21 0 17 0;
 #X restore 36 257 pd abstractions;
 #X obj 1 722 cnv 15 649 25 empty empty Boite_à_outils 5 12 0 20 -1
 -262144 0;
@@ -1311,7 +1324,7 @@ et dans un but de synthèse sonore.;
 expr~;
 #X obj -139 284 expr~ floor ($v1*$v2 \, 0);
 #X obj 25 260 sig~ 16;
-#X floatatom -126 335 5 0 0 0 - - -, f 5;
+#X floatatom -126 335 5 0 0 0 - - -;
 #X obj -139 259 phasor~ 0.1;
 #X obj -139 309 unsig~ 20;
 #X obj -136 241 hsl 128 15 0 0.6 0 0 empty empty empty -2 -8 0 10 -262144
@@ -1323,7 +1336,7 @@ expr~;
 #X msg 112 250 0 \, 1 500;
 #X obj 112 297 expr~ floor ($v1*$v2 \, 0);
 #X obj 276 273 sig~ 16;
-#X floatatom 125 348 5 0 0 0 - - -, f 5;
+#X floatatom 125 348 5 0 0 0 - - -;
 #X obj 112 322 unsig~ 20;
 #X obj -36 527 dac~;
 #N canvas 683 50 667 679 elliptic2 0;
@@ -1572,7 +1585,7 @@ patch;
 #X msg 87 52 npoints 2048;
 #X msg 99 77 npoints 1024;
 #X obj 37 -80 inlet~;
-#X floatatom 57 360 5 0 0 0 - - -, f 5;
+#X floatatom 57 360 5 0 0 0 - - -;
 #X obj 135 297 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 208 213 unpack f f f;
@@ -1611,8 +1624,8 @@ commencent à être évaluées;
 1;
 #X text 89 -277 ceci est l'objet permettant d'avoir accès à nos entrées
 audio;
-#X floatatom 148 -124 5 0 0 0 - - -, f 5;
-#X floatatom 341 -122 5 0 0 0 - - -, f 5;
+#X floatatom 148 -124 5 0 0 0 - - -;
+#X floatatom 341 -122 5 0 0 0 - - -;
 #X text 147 -106 pitch;
 #X text 331 -103 envelope;
 #X obj 148 -150 sigmund~ -hop 4096 pitch env;
@@ -1648,8 +1661,8 @@ audio;
 #X msg 140 17 thresh 2.5 5;
 #X msg 140 73 minvel 7;
 #X obj 49 19 inlet~;
-#X floatatom 48 295 5 0 0 0 - - -, f 5;
-#X floatatom 80 318 5 0 0 0 - - -, f 5;
+#X floatatom 48 295 5 0 0 0 - - -;
+#X floatatom 80 318 5 0 0 0 - - -;
 #X text 5 293 raw;
 #X text 120 317 cooked;
 #X text 243 11 Définir les seuils haut et bas permettant de détecter
@@ -1689,7 +1702,7 @@ patch;
 #X connect 14 0 13 1;
 #X connect 16 0 17 0;
 #X restore 36 1053 pd tracking_micro;
-#N canvas 700 82 667 679 entrée_chaudes_froides 0;
+#N canvas 561 22 855 796 entrée_chaudes_froides 0;
 #X text 11 10 Dans le cadre d'un langage de programmation basé sur
 l'évenementiel \, il est nécessaire de pouvoir évaluer le résultat
 produit par une boite à tout moment.;
@@ -1698,38 +1711,51 @@ un évenement et il nous permettra donc d'executer l'opération prévue
 par la boite.;
 #X text 13 70 Par exemple la boite [f];
 #X obj 193 71 f;
-#X text 16 106 a deux entrées et une sortie \, sur tout objet l'entrée
-tout à gauche et toujours l'entrée chaude : quand une valeur est
-passée à cette entrée \, le résultat est automatiquement évalué
-et passé à la sortie.;
 #X obj 93 192 f;
-#X floatatom 93 168 5 0 0 0 - - -, f 5;
-#X floatatom 93 216 5 0 0 0 - - -, f 5;
+#X floatatom 93 168 5 0 0 0 - - -;
+#X floatatom 93 216 5 0 0 0 - - -;
 #X text 19 242 si par contre on passe un valeur à l'entrée de droite
 celle ci est stockée dans l'objet et le résultat n'est évalué que
 si l'entrée chaude est activée.;
 #X obj 44 373 f;
-#X floatatom 71 351 5 0 0 0 - - -, f 5;
-#X floatatom 44 397 5 0 0 0 - - -, f 5;
+#X floatatom 71 351 5 0 0 0 - - -;
+#X floatatom 44 397 5 0 0 0 - - -;
 #X obj 44 352 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X floatatom 97 545 5 0 0 0 - - -, f 5;
-#X obj 118 471 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 172 510 f;
-#X obj 100 507 + 1;
-#X text 147 465 <- quand je clique ici;
-#X text 146 547 <- je veux que cette boite augmente de 1;
-#X obj 116 614 until;
-#X text 171 610 <- comptez jusqu'à 512 en utilisant [until];
+#X floatatom 134 690 5 0 0 0 - - -;
+#X obj 188 623 f;
+#X obj 127 622 + 1;
+#X text 197 551 <- quand je clique ici;
+#X text 183 692 <- je veux que cette boite augmente de 1;
+#X obj 145 505 until;
+#X text 208 755 <- comptez jusqu'à 512 en utilisant [until];
 #X obj 14 419 cnv 15 420 40 empty empty empty 20 12 0 14 -258113 -66577
 0;
 #X text 15 428 Créez un compteur avec les objets suivant;
-#X connect 5 0 7 0;
-#X connect 6 0 5 0;
-#X connect 9 0 11 0;
-#X connect 10 0 9 1;
-#X connect 12 0 9 0;
+#X floatatom 245 651 5 0 0 0 - - -;
+#X floatatom 138 592 5 0 0 0 - - -;
+#X msg 112 496 512;
+#X msg 242 576 0;
+#X obj 93 586 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 16 106 a deux entrées et une sortie. Sur tout objet l'entrée
+tout à gauche et toujours l'entrée chaude : quand une valeur est
+passée à cette entrée \, le résultat est automatiquement évalué
+et passé à la sortie.;
+#X connect 4 0 6 0;
+#X connect 5 0 4 0;
+#X connect 8 0 10 0;
+#X connect 9 0 8 1;
+#X connect 11 0 8 0;
+#X connect 13 0 21 0;
+#X connect 13 0 14 0;
+#X connect 14 0 12 0;
+#X connect 14 0 13 1;
+#X connect 17 0 14 0;
+#X connect 17 0 13 0;
+#X connect 22 0 14 1;
+#X connect 23 0 17 0;
+#X connect 24 0 13 0;
 #X restore 36 317 pd entrée_chaudes_froides;
 #X obj 5 314 cnv 15 25 25 empty empty 10 0 12 0 20 -1 -262144 0;
 #X text 222 317 <- comment les objets fonctionnent ...;
@@ -1747,7 +1773,7 @@ si l'entrée chaude est activée.;
 #X text 286 1027 <- une approche supplémentaire.;
 #X obj 6 1049 cnv 15 25 25 empty empty 4 6 12 0 20 -1 -262144 0;
 #N canvas 683 50 667 679 synthese_additive 0;
-#X floatatom 41 448 5 0 0 0 - - -, f 5;
+#X floatatom 41 448 5 0 0 0 - - -;
 #X obj 40 631 dac~;
 #X msg 462 529 0 0 0 0 0 0 0 0 0 0;
 #X msg 434 455 1 0 1 0 1 0 1 0 1 0;
@@ -1853,10 +1879,10 @@ bruit blanc.;
 1;
 #X obj 117 81 hsl 128 15 20 20000 0 0 empty empty empty -2 -8 0 10
 -262144 -1 -1 0 1;
-#X floatatom 125 102 7 0 0 0 - - -, f 7;
+#X floatatom 125 102 7 0 0 0 - - -;
 #X obj 119 129 hsl 128 15 2 25 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 127 150 7 0 0 0 - - -, f 7;
+#X floatatom 127 150 7 0 0 0 - - -;
 #X text 270 76 fréquence;
 #X text 268 125 Q;
 #X text 20 35 On arrive assez facilement a une synthèse rudimentaire
@@ -1871,7 +1897,7 @@ de bruit de vent :;
 #X msg 151 503 90;
 #X obj 229 539 hsl 128 15 2 25 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 244 559 7 0 0 0 - - -, f 7;
+#X floatatom 244 559 7 0 0 0 - - -;
 #X text 367 537 Q;
 #X text 25 465 Ou alors on peut aussi l'appliquer à des sons complexes
 \, construits en sysnthèse additive :;
@@ -1984,13 +2010,13 @@ banques de filtres :;
 #X obj 38 28 mtof~;
 #X obj 41 -15 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 49 6 7 0 0 0 - - -, f 7;
+#X floatatom 49 6 7 0 0 0 - - -;
 #X obj 86 33 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 94 54 7 0 0 0 - - -, f 7;
+#X floatatom 94 54 7 0 0 0 - - -;
 #X obj 84 101 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 92 122 7 0 0 0 - - -, f 7;
+#X floatatom 92 122 7 0 0 0 - - -;
 #X obj 195 535 metro 100;
 #X obj 195 560 tabwrite~ array5;
 #X obj 195 514 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -3576,8 +3602,8 @@ normalize \;;
 utilisé (il contient les presets \, et une table pour le waveshapping)
 ;
 #X obj 272 745 pack f f;
-#X floatatom 325 702 5 0 0 0 vibrato_freq - -, f 5;
-#X floatatom 272 721 5 0 0 0 vibrato_depth - -, f 5;
+#X floatatom 325 702 5 0 0 0 vibrato_freq - -;
+#X floatatom 272 721 5 0 0 0 vibrato_depth - -;
 #X text -7 627 Voici un petit exemple de waveshapping avec une sélection
 de presets \, avec un abstraction réutilisable;
 #N canvas 0 50 450 300 (subpatch) 0;
@@ -5183,7 +5209,7 @@ patch;
 #X msg 61 316 60;
 #X obj 102 286 random 100;
 #X obj 100 335 b;
-#X floatatom 131 106 5 0 0 0 - - -, f 5;
+#X floatatom 131 106 5 0 0 0 - - -;
 #X obj 102 310 moses 50;
 #X msg 220 340 127;
 #X obj 220 364 abs/drumkit-snare 10 250;
